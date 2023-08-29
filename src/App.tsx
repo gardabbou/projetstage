@@ -19,7 +19,7 @@ function  App  () {
       <div style={{flex:1}}>
         <Router>
             <Visite/>
-            <Route path='/login' element={<Login/>}/>
+            
 
         </Router>
       </div>
