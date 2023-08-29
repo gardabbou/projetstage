@@ -12,7 +12,7 @@ import Visite from './Components/Visite';
 
 /*<Route path="/Login" Component={Login}/>
           <Route path="/Inscrit" Component={Inscrit}/> */
-function  App () {
+function  App  () {
 
   return (
     
