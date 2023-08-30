@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import {BrowserRouter as Router , Route } from "react-router-dom";
 
 
-
-import Login from './Components/Login';
+import ReactDOM from 'react-dom'
+import {Routes ,Route} from "react-router-dom"
+import Login from './Components/Login'
 
 import Inscrit from './Components/Inscrit'
 import './App.css';
@@ -16,12 +16,16 @@ function  App () {
 
   return (
     
-      <div style={{flex:1}}>
-        <Router>
-            <Visite/>
-            <Route path='/login' element={<Login/>}/>
-
-        </Router>
+      <div > 
+        
+          <Routes >
+            <Route path="/" element={<Visite/>}/>
+            <Route path="/login" element={<Login/>}/>
+            <Route path="/inscrit" element={<Inscrit/>}/>
+          </Routes>
+          
+        
+           
       </div>
       
       

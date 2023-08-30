@@ -6,7 +6,7 @@ function Login ()
 //render() {
     return(
   <div className="container"
-  style={{flex:1}}
+
   >
      <div className="row">
           <div className="col-md-6">
