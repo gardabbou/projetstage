@@ -1,7 +1,7 @@
 import React from  'react';
 import { Link } from 'react-router-dom';
 
-import"./visite.css"; 
+
 function Profil (){
     return(
 
