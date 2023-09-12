@@ -1,5 +1,5 @@
 import react, { Component } from "react";
-import '../style/Article.css'
+//import '../style/Article.css'
 import {useState, useEffect} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import{FaEye,FaPen,FaTrash} from'react-icons/fa'
@@ -43,11 +43,11 @@ function Article()
              <td>{ user['name']  }</td>
              <td>{ user['email']  }</td>
              <td>
-             <FaEye />
-             &nbsp;&nbsp;
-             <FaPen/>
-             &nbsp;
-             <FaTrash/>
+              <button type="button"   className="icones"> <FaEye /></button>
+             
+             <button type="button" className="icones"> <FaPen/></button>
+             
+             <button type="button" className="icones"><FaTrash/></button>
              </td>
         </tr>) 
       }

@@ -6,7 +6,7 @@ import {Routes ,Route} from "react-router-dom"
 import Login from './Components/Login'
 
 import Inscrit from './Components/Inscrit'
-import './App.css';
+import './style/App.scss'
 import Visite from './Components/Visite';
 import Profil from './Components/Profil';
 import Article from './Components/Article';

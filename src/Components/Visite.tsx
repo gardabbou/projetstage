@@ -1,7 +1,8 @@
 import React from  'react';
 import { Link } from 'react-router-dom';
 import img1 from '../assets/page7.jpg'
-import"../style/Visite.css"; 
+//import"../style/Visite.css";
+//import '../style/App.scss' 
 function Visite (){
     return(
         
