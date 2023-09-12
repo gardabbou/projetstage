@@ -1,12 +1,13 @@
 import react, { Component } from "react";
-import './Login.css'
+import '../style/Login.css'
+import { Link } from 'react-router-dom';
 
 function Login () 
 {  
 //render() {
     return(
   <div className="container"
-  style={{flex:1}}
+
   >
      <div className="row">
           <div className="col-md-6">
@@ -26,13 +27,18 @@ function Login ()
                                 </div>
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 <div >
-                                    <button type="button" className="btn btn-dark ">se connecter</button>
+                                    <Link to="/profil">
+                                        <button type="button" className="btn btn-dark ">se connecter</button>
+                                    </Link>
                                 </div>
                        </div>
                     </form>
             </div>
 
             <div className="col-md-6">
+               <div className="mg"> 
+                    
+              </div>
 
             </div>
       </div>

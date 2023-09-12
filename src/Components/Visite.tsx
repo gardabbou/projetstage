@@ -1,16 +1,49 @@
 import React from  'react';
 import { Link } from 'react-router-dom';
-function Visite ()
-{ return(
+import img1 from '../assets/page7.jpg'
+import"../style/Visite.css"; 
+function Visite (){
+    return(
+        
+        <div className='body'>
 
-        <div>
+                <div className="img"> 
+                    
+                   
+            <div className='droit'>   
+                <Link to="/login">
+                    <button type="button" className="btn btn-dark" >Login</button>
+                </Link>
+                &nbsp;&nbsp;
+                <Link to="/inscrit">
+                    <button type="button" className="btn btn-dark ">Inscrit</button>
+                </Link>
+                <br/>
+            </div>
+           <div className='texte'>
+            <br/>
+                <h1>L'Importance des Livres : Portes Ouvertes vers la Connaissance et l'Imagination</h1>
 
-            <Link to='/login'>
-            <button type="button" className="btn btn-success">Login</button>
-            </Link>
+                   Les livres ont joué un rôle essentiel dans la vie de l'humanité depuis des siècles.
+                   <br/> Ils ont servi de gardiens de la connaissance,
+                   <br/>de sources d'inspiration et d'instruments pour explorer l'imagination. 
+                   <br/>Alors que le monde évolue à un rythme rapide avec l'avènement de la technologie numérique,
+                   l'importance des livres dans nos vies ne fait que croître.
+            </div>
+
+
+
+
+
+
+           
+            
+            </div>
+           
         </div>
-
+        
+            
+        
     );
-
 }
-export default Visite ;
+export default Visite;

@@ -1,27 +1,33 @@
 import React, { Component } from 'react';
-import {BrowserRouter as Router , Route } from "react-router-dom";
 
 
-
-import Login from './Components/Login';
+import ReactDOM from 'react-dom'
+import {Routes ,Route} from "react-router-dom"
+import Login from './Components/Login'
 
 import Inscrit from './Components/Inscrit'
 import './App.css';
 import Visite from './Components/Visite';
+import Profil from './Components/Profil';
+import Article from './Components/Article';
 
 
-/*<Route path="/Login" Component={Login}/>
-          <Route path="/Inscrit" Component={Inscrit}/> */
-function  App  () {
+function  App () {
 
   return (
     
-      <div style={{flex:1}}>
-        <Router>
-            <Visite/>
-            
-
-        </Router>
+      <div > 
+        
+          
+        <Routes >
+            <Route path="/" element={<Visite/>}/>
+            <Route path="/login" element={<Login/>}/>
+            <Route path="/inscrit" element={<Inscrit/>}/>
+            <Route path="/profil" element={<Profil/>}/>
+            <Route path="/article" element={<Article/>}/>
+          </Routes>
+        
+           
       </div>
       
       
