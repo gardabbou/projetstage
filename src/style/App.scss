@@ -106,14 +106,69 @@ form .inputs input[type="email"], input[type="password"], input[type="text"], in
     background:url('../assets/femme.jpg') no-repeat;
     background-size: 100% 100%;
 }
-
+//article
 .icones{
     font-size: 1rem;
     border: none;
     outline: none;
     padding: 10px 12px ;
-    border-radius:20ch;
+    border: radius 30px;
     background-color: aliceblue;
     color: black;
 }
 
+//profil
+.im5{
+   
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+   
+}
+//vueProfile
+.prf{
+    max-width: 800px;
+    
+    
+    margin: 10px auto;
+    padding:30px;
+    border-radius:10px;
+    
+   box-shadow: 5px 5px 15px rgb(218, 217, 217);
+   font-family: Arial, sans-serif;
+   font-size: 16px;
+   font-weight: bold;
+   //color: #FF5733;
+   text-decoration: underline;
+   line-height: 1.5;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+   font-style:inherit;
+       
+
+}
+/*.profile{
+    padding: 15px;
+    border-radius: 5px;
+    border:none;
+    
+    outline: none;
+   margin: 20px;
+}*/
+.user{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+   
+}
+
+#usr{
+    color: #797979;
+}
+
+/*.bord{
+    background-color:rgb(61, 150, 150);
+    width: 100px;
+    height: 100px;
+}*/

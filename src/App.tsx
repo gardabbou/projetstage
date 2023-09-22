@@ -10,10 +10,12 @@ import './style/App.scss'
 import Visite from './Components/Visite';
 import Profil from './Components/Profil';
 import Article from './Components/Article';
-
+import VueProfile from './Components/VueProfile';
 
 function  App () {
-
+  
+ 
+  
   return (
     
       <div > 
@@ -24,7 +26,8 @@ function  App () {
             <Route path="/login" element={<Login/>}/>
             <Route path="/inscrit" element={<Inscrit/>}/>
             <Route path="/profil" element={<Profil/>}/>
-            <Route path="/article" element={<Article/>}/>
+            <Route path="/article" element={<Article   />}/>
+            <Route path="/user/:id" element={<VueProfile />}/>
           </Routes>
         
            
