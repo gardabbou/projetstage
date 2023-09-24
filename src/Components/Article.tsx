@@ -35,8 +35,23 @@ function Article()
     
      //buntton Ajout
         const[cond,setcond]=useState(false)
-     
-      
+
+        const [post,setpost]=useState({
+            id:'',
+            nom:'',
+            email:''
+           
+        })
+        const handleInput=(event:any)=>{
+          setpost({...post,[event.traget.name]:event.traget.event})
+        }
+        
+      function handleSubmit(event:any){
+        event.preventDefault()
+        axios.post('https://jsonplaceholder.typicode.com/users/',{post})
+        .then(response =>console.log(response))
+        .catch(err => console.log(err))
+      }
     return( 
 
 
@@ -50,12 +65,15 @@ function Article()
     Modal
   </Modal.Header>
   <ModalBody>
-    <input type="numbre" placeholder="Id"/>
-    <input type="text" placeholder="Nom"/>
-    <input type="email" placeholder="Email"/>
+    <form  >
+        <input type="numbre" placeholder="Id" onChange={handleInput} name="id" />
+        <input type="text" placeholder="Nom" onChange={handleInput} name="nom"/>
+        <input type="email" placeholder="Email" onChange={handleInput} name="email"/>
+        
+    </form>
   </ModalBody>
   <Modal.Footer>
-    <Button >Save</Button>
+    <Button onSubmit={handleSubmit}>Save</Button>
     <Button onClick={() =>setcond(false)} >close</Button>
   
   </Modal.Footer>
