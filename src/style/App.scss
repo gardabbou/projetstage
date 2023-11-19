@@ -9,7 +9,7 @@
     float: right;
 }
 
-.texte {
+#texte {
     color: blanchedalmond;
    
 }
@@ -167,8 +167,19 @@ form .inputs input[type="email"], input[type="password"], input[type="text"], in
     color: #797979;
 }
 
-/*.bord{
-    background-color:rgb(61, 150, 150);
-    width: 100px;
-    height: 100px;
-}*/
+.bord{
+    background-color:blanchedalmond;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+}
+.navbar{
+    background-color:blanchedalmond;
+    
+    width: 100%;
+  
+    
+}

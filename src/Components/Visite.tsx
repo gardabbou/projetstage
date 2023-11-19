@@ -21,7 +21,7 @@ function Visite (){
                 </Link>
                 <br/>
             </div>
-           <div className='texte'>
+           <div className='container' id='texte'>
             <br/>
                 <h1>L'Importance des Livres : Portes Ouvertes vers la Connaissance et l'Imagination</h1>
 

@@ -1,15 +1,16 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import imge from "../assets/books.png";
-
+import { FaBook } from "react-icons/fa";
 function Navbar() {
   return (
-    <div className="bord">
+    <div className="navbar">
+    <div className="bord" >
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <div className="navbar">
         <div className="container-fluid">
           <a className="navbar-brand">
-            <img className="im5" src={imge} />
+            <FaBook/>
+             BOOK CLUB
           </a>
+          
           <button
             className="navbar-toggler"
             type="button"
@@ -77,13 +78,15 @@ function Navbar() {
                 placeholder="Search"
                 aria-label="Search"
               />
-              <button className="btn btn-outline-success" type="submit">
+              <button className="btn btn-outline-dark" type="submit">
                 Search
               </button>
             </form>
           </div>
+          </div>
         </div>
       </nav>
+    </div>
     </div>
   );
 }
